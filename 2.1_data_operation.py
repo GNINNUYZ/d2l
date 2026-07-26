@@ -1,0 +1,27 @@
+import numpy as np
+x = np.arange(12)
+print(x)
+print(x.shape)
+y = np.zeros((3, 4))
+print(y.shape)
+x = x.reshape(3, 4)
+print(x)
+y = np.zeros((2,3,4))
+print(y)
+y = np.zeros((3,2,3,4))
+print(y)
+y = np.random.normal(0, 1, size=(3,4))
+print(y)
+x = np.array([2,4,6,8])
+x = np.exp(x)
+print(x)
+#z = np.concatenate([x, y ], axis=0)
+#print(z)
+z = x + y
+print(z)
+print(z[-1])
+z[0:2, :] = 12
+print(z)
+
+a = np.zeros_like(z)
+print(a)
